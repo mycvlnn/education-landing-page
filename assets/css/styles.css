@@ -10,3 +10,9 @@ body {
     font-size: 1.6rem;
     font-family: Poppins, sans-serif;
 }
+
+:root {
+    --primary-color: #ffb900;
+    --black-color: #171100;
+    --text-color: #5f5b53;
+}
