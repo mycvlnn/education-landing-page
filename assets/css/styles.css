@@ -20,6 +20,7 @@ body {
     --black-color: #171100;
     --text-color: #5f5b53;
     --bg-secondary: #2e2100;
+    --text-footer: #bfbcb2;
 }
 
 /* Common */
@@ -382,7 +383,7 @@ body {
 .courses .course-item .info {
     display: block;
     padding: 16px 22px 22px 22px;
-    border: 1px solid #ccc;
+    border: 1px solid #e2dfda;
     border-top: none;
     border-bottom-left-radius: 12px;
     border-bottom-right-radius: 12px;
@@ -707,4 +708,100 @@ body {
 
 .blog-section .pagings .dot + .dot {
     margin-left: 6px;
+}
+
+/* =============== Footer Section =============== */
+
+footer.footer {
+    padding: 96px 0px 28px;
+    background-color: var(--bg-secondary);
+}
+
+footer.footer .row {
+    display: flex;
+    gap: 145px;
+}
+
+.footer .row-start {
+    padding-bottom: 38px;
+}
+
+.footer a {
+    text-decoration: none;
+}
+
+.footer .summary .logo {
+    font-family: var(--font-heading);
+    font-weight: 700;
+    font-size: 2.4rem;
+    color: #fff;
+}
+
+.footer .summary .logo::after {
+    content: attr(dot-end);
+    color: var(--primary-color);
+}
+
+.footer .summary .slogan {
+    margin-top: 18px;
+    width: 267px;
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 1.86;
+    color: var(--text-footer);
+}
+
+.footer .summary .socials {
+    margin-top: 18px;
+    display: flex;
+    align-items: center;
+    gap: 18px;
+}
+
+.footer .more-info {
+    gap: 130px;
+}
+
+.footer .more-info .title {
+    font-weight: 600;
+    line-height: 1.75;
+    color: #fff;
+    padding-bottom: 14px;
+    margin-bottom: 16px;
+    position: relative;
+}
+
+.footer .more-info .title::after {
+    content: "";
+    position: absolute;
+    display: inline-block;
+    height: 1px;
+    width: 130px;
+    background-color: #59554b;
+    bottom: 0;
+    left: 0;
+}
+
+.footer .more-info .item .link {
+    margin-top: 12px;
+    display: inline-block;
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 1.86;
+    color: var(--text-footer);
+}
+
+.footer .more-info .item .link span {
+    font-weight: 600;
+    color: #fff;
+}
+
+.footer .copyright {
+    text-align: center;
+    padding-top: 28px;
+    border-top: 1px solid #59554b;
+    color: #807d74;
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 1.86;
 }
