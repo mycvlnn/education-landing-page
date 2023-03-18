@@ -19,6 +19,7 @@ body {
     --secondary: #fffcf4;
     --black-color: #171100;
     --text-color: #5f5b53;
+    --bg-secondary: #2e2100;
 }
 
 /* Common */
@@ -282,7 +283,7 @@ body {
     margin-left: 8px;
 }
 
-/* Popular section */
+/* =============== Popular section =============== */
 
 .popular-section {
     padding: 200px 0;
@@ -422,4 +423,82 @@ body {
 .courses .course-item .row-cta .book-now-btn {
     text-decoration: none;
     margin-left: auto;
+}
+
+/* =============== Feedback =============== */
+
+.feedback {
+    padding: 96px 0;
+    background-color: var(--bg-secondary);
+}
+
+.feedback .row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.feedback .student {
+    min-width: 160px;
+    max-width: 250px;
+}
+
+.feedback .student .avatar {
+    width: 72px;
+    height: 72px;
+    border-radius: 999px;
+}
+
+.feedback .student .name {
+    margin-top: 18px;
+    display: block;
+    font-family: var(--font-heading);
+    font-weight: 700;
+    font-size: 2.4rem;
+    line-height: 1.42;
+    color: #f7f7f7;
+}
+
+.feedback .student .class {
+    margin-top: 4px;
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 1.86;
+    color: #bfbcb3;
+}
+
+.feedback .student .dots {
+    margin-top: 28px;
+    justify-content: flex-start;
+}
+
+.feedback .student .dots .dot {
+    width: 6px;
+    height: 6px;
+    border-radius: 999px;
+    background: #634700;
+}
+
+.feedback .student .dots .dot + .dot {
+    margin-left: 6px;
+}
+
+.feedback .student .dots .dot.active {
+    background-color: var(--primary-color);
+}
+
+.feedback .message {
+    width: 740px;
+    position: relative;
+    font-style: italic;
+    font-weight: 400;
+    font-size: 2.6rem;
+    line-height: 1.54;
+    color: #ffffff;
+}
+
+.feedback .message .quotes {
+    position: absolute;
+    left: -30px;
+    top: -28px;
 }
