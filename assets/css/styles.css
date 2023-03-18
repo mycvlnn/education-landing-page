@@ -502,3 +502,74 @@ body {
     left: -30px;
     top: -28px;
 }
+
+/* =============== CTA Section =============== */
+
+.cta-section {
+    padding: 200px 0;
+}
+
+.cta-section .row {
+    display: flex;
+    align-items: center;
+    gap: 130px;
+}
+
+.cta-section .images-block {
+    display: flex;
+    gap: 30px;
+    width: 570px;
+    height: 438px;
+}
+
+.cta-section .images-block .image {
+    width: 270px;
+    height: 404px;
+    border-radius: 16px;
+    align-self: flex-end;
+    object-fit: cover;
+    object-position: center;
+}
+
+.cta-section .images-block .image:first-child {
+    align-self: flex-start;
+}
+
+.cta-section .info {
+    flex: 1;
+}
+
+.cta-section .info .title {
+    font-family: var(--font-heading);
+    font-weight: 700;
+    font-size: 3.8rem;
+    line-height: 1.26;
+    letter-spacing: -0.02em;
+    color: var(--black-color);
+}
+
+.cta-section .info .desc {
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 1.75;
+    color: var(--text-color);
+    margin-top: 16px;
+}
+
+.cta-section .info .cta-btn {
+    min-width: 137px;
+    background: var(--primary-color);
+    font-size: 1.6rem;
+    text-decoration: none;
+    margin-top: 32px;
+}
+
+.cta-section .row + .row {
+    margin-top: 200px;
+}
+
+.cta-section .image-block {
+    width: 470px;
+    height: 440px;
+    border-radius: 20px;
+}
