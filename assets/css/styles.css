@@ -23,6 +23,13 @@ body {
 
 /* Common */
 
+.line-number {
+    display: -webkit-box;
+    -webkit-line-clamp: var(--line-clamp, 2);
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
 .container {
     width: var(--width-container);
     max-width: calc(100% - 40px);
@@ -37,7 +44,7 @@ body {
     text-align: center;
     padding: 17px 20px;
     border-radius: 999px;
-    font-size: 1.6rem;
+    font-size: 1.4rem;
     font-weight: 600;
     transition: all linear 0.25s;
 }
@@ -119,6 +126,7 @@ body {
 .header .navbar .sign-up-btn {
     min-width: 144px;
     margin-left: 49px;
+    font-size: 1.6rem;
 }
 
 /* =============== Header =============== */
@@ -218,6 +226,7 @@ body {
     background-color: var(--primary-color);
     min-width: 180px;
     padding: 24px 20px;
+    font-size: 1.8rem;
 }
 
 .hero-info .watch-video-btn {
@@ -271,4 +280,146 @@ body {
     font-size: 1.8rem;
     color: var(--text-color);
     margin-left: 8px;
+}
+
+/* Popular section */
+
+.popular-section {
+    padding: 200px 0;
+}
+
+.popular-section .row {
+    display: flex;
+    align-items: center;
+}
+
+.popular-section .header-popular {
+    justify-content: space-between;
+}
+
+.popular-section .header-popular .heading {
+    font-family: var(--font-heading);
+    font-weight: 700;
+    font-size: 3.8rem;
+    line-height: 1.26;
+    letter-spacing: -0.02em;
+    color: var(--black-color);
+}
+
+.popular-section .header-popular .desc {
+    margin-top: 1.6rem;
+    font-weight: 400;
+    font-size: 1.8rem;
+    line-height: 1.67;
+    color: var(--text-color);
+    width: 458px;
+}
+
+.header-popular .nav-slide .arrow-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 999px;
+}
+
+.header-popular .nav-slide .arrow-btn + .arrow-btn {
+    margin-left: 18px;
+}
+
+.header-popular .nav-slide .prev-btn {
+    border: 1px solid var(--primary-color);
+}
+
+.header-popular .nav-slide .next-btn {
+    background-color: var(--primary-color);
+}
+
+.popular-section .body-popular {
+    margin-top: 55px;
+}
+
+.popular-section .body-popular .courses {
+    --gap: 30px;
+    align-items: stretch;
+    flex-wrap: wrap;
+    margin-left: calc(-1 * var(--gap));
+}
+
+.body-popular .courses .course-item {
+    margin-left: var(--gap);
+    margin-bottom: var(--gap);
+    width: calc(33.3333% - var(--gap));
+    border-radius: 12px;
+    display: block;
+}
+
+.body-popular .courses .course-item:hover .info {
+    border: 1px solid transparent;
+    border-top: none;
+    box-shadow: 0px 18px 36px rgba(0, 0, 0, 0.05);
+}
+
+.body-popular .courses .course-item:hover .btn {
+    background-color: var(--primary-color);
+}
+
+.courses .course-item .thumb {
+    width: 100%;
+    height: 278px;
+    object-fit: cover;
+    object-position: center;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+    display: block;
+}
+
+.courses .course-item .info {
+    display: block;
+    padding: 16px 22px 22px 22px;
+    border: 1px solid #ccc;
+    border-top: none;
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+    transition: all linear 0.25s;
+}
+
+.courses .course-item .info .name {
+    font-weight: 600;
+    font-size: 1.8rem;
+    line-height: 1.67;
+    color: var(--black-color);
+}
+
+.courses .course-item .info .rate {
+    margin-left: auto;
+    color: var(--primary-color);
+}
+
+.course-item .info .rate .number {
+    margin-left: 6px;
+}
+
+.courses .course-item .desc {
+    margin-top: 6px;
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 1.86;
+    color: var(--text-color);
+}
+
+.courses .course-item .row-cta {
+    margin-top: 12px;
+}
+
+.courses .course-item .row-cta .price {
+    font-weight: 600;
+    font-size: 1.8rem;
+    color: var(--black-color);
+}
+
+.courses .course-item .row-cta .book-now-btn {
+    text-decoration: none;
+    margin-left: auto;
 }
