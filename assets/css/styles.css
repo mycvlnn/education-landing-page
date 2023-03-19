@@ -14,7 +14,6 @@ body {
 :root {
     --font-heading: "Sen", sans-serif;
     --width-container: 1170px;
-    --height-header: 106px;
     --primary-color: #ffb900;
     --secondary: #fffcf4;
     --black-color: #171100;
@@ -44,12 +43,12 @@ body {
     background-color: var(--black-color);
     color: #fff;
     text-align: center;
-    padding: 17px 20px;
+    padding: 0 20px;
+    line-height: 50px;
     border-radius: 999px;
     font-size: 1.4rem;
     font-weight: 600;
     transition: all linear 0.25s;
-    text-decoration: none;
     border: none;
     cursor: pointer;
 }
@@ -58,24 +57,26 @@ body {
     opacity: 0.9;
 }
 
+a {
+    text-decoration: none;
+}
+
 /* =============== Header =============== */
 .header {
-    height: var(--height-header);
-    padding-top: 36px;
-    padding-bottom: 20px;
     background-color: var(--secondary);
+}
+
+.header.sticky {
     position: sticky;
-    top: -16px;
+    top: -28px;
     z-index: 1;
 }
 
 .header .navbar {
+    padding-top: 36px;
+    padding-bottom: 8px;
     display: flex;
     align-items: center;
-}
-
-.header .navbar a {
-    text-decoration: none;
 }
 
 .header .navbar .logo {
@@ -96,19 +97,20 @@ body {
     align-items: center;
 }
 
-.header .navbar .item:hover a {
-    color: var(--black-color);
-}
-
 .header .navbar .item a {
     position: relative;
     display: inline-block;
     margin: 0 21px;
-    font-weight: 500;
+    font-weight: 400;
     font-size: 1.6rem;
     line-height: 1.75;
     color: var(--text-color);
     transition: all linear 0.25s;
+}
+
+.header .navbar .item:hover a {
+    color: var(--black-color);
+    text-shadow: 1px 0 0 currentColor;
 }
 
 .header .navbar .item a::after {
@@ -137,7 +139,7 @@ body {
 /* =============== Header =============== */
 .hero {
     background-color: var(--secondary);
-    padding-top: 44px;
+    padding-top: 56px;
     padding-bottom: 65px;
 }
 
@@ -222,15 +224,11 @@ body {
     margin-top: 38px;
 }
 
-.hero-info .actions a {
-    text-decoration: none;
-}
-
 .hero-info .actions .see-course-btn {
     color: #fff;
     background-color: var(--primary-color);
     min-width: 180px;
-    padding: 24px 20px;
+    line-height: 64px;
     font-size: 1.8rem;
 }
 
@@ -425,7 +423,6 @@ body {
 }
 
 .courses .course-item .row-cta .book-now-btn {
-    text-decoration: none;
     margin-left: auto;
 }
 
@@ -564,7 +561,6 @@ body {
     min-width: 137px;
     background: var(--primary-color);
     font-size: 1.6rem;
-    text-decoration: none;
     margin-top: 32px;
 }
 
@@ -614,7 +610,6 @@ body {
 
 .blog-section .row .blog-item {
     flex: 1;
-    text-decoration: none;
     border-radius: 16px;
     background-color: #fff;
     transition: box-shadow linear 0.25s;
@@ -724,10 +719,6 @@ footer.footer .row {
 
 .footer .row-start {
     padding-bottom: 38px;
-}
-
-.footer a {
-    text-decoration: none;
 }
 
 .footer .summary .logo {
