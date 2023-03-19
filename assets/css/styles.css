@@ -61,6 +61,23 @@ a {
     text-decoration: none;
 }
 
+.heading {
+    font-family: var(--font-heading);
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    color: var(--black-color);
+}
+
+.heading.lv1 {
+    font-size: 5.8rem;
+    line-height: 1.17;
+}
+
+.heading.lv2 {
+    font-size: 3.8rem;
+    line-height: 1.26;
+}
+
 /* =============== Header =============== */
 .header {
     background-color: var(--secondary);
@@ -200,15 +217,6 @@ a {
     flex: 1;
 }
 
-.hero .hero-info .heading {
-    font-family: var(--font-heading);
-    font-weight: 700;
-    font-size: 5.8rem;
-    line-height: 1.17;
-    color: var(--black-color);
-    letter-spacing: -0.02em;
-}
-
 .hero .hero-info .desc {
     margin-top: 22px;
     font-weight: 400;
@@ -300,15 +308,6 @@ a {
     justify-content: space-between;
 }
 
-.popular-section .header-popular .heading {
-    font-family: var(--font-heading);
-    font-weight: 700;
-    font-size: 3.8rem;
-    line-height: 1.26;
-    letter-spacing: -0.02em;
-    color: var(--black-color);
-}
-
 .popular-section .header-popular .desc {
     margin-top: 1.6rem;
     font-weight: 400;
@@ -318,25 +317,29 @@ a {
     width: 458px;
 }
 
-.header-popular .nav-slide .arrow-btn {
+.header-popular .nav-slide .nav-btn {
     display: flex;
     align-items: center;
     justify-content: center;
     width: 40px;
     height: 40px;
     border-radius: 999px;
+    color: var(--primary-color);
+    border: 1px solid var(--primary-color);
+    background-color: #fff;
+    cursor: pointer;
+    transition: all linear 0.25s;
 }
 
-.header-popular .nav-slide .arrow-btn + .arrow-btn {
+.header-popular .nav-slide .nav-btn + .nav-btn {
     margin-left: 18px;
 }
 
-.header-popular .nav-slide .prev-btn {
-    border: 1px solid var(--primary-color);
-}
-
-.header-popular .nav-slide .next-btn {
+.header-popular .nav-slide .nav-btn:hover,
+.header-popular .nav-slide .nav-btn.active {
     background-color: var(--primary-color);
+    color: #fff;
+    border-color: currentColor;
 }
 
 .popular-section .body-popular {
@@ -540,15 +543,6 @@ a {
     flex: 1;
 }
 
-.cta-section .info .title {
-    font-family: var(--font-heading);
-    font-weight: 700;
-    font-size: 3.8rem;
-    line-height: 1.26;
-    letter-spacing: -0.02em;
-    color: var(--black-color);
-}
-
 .cta-section .info .desc {
     font-weight: 400;
     font-size: 1.6rem;
@@ -579,16 +573,6 @@ a {
 .blog-section {
     padding: 96px 0;
     background-color: var(--secondary);
-}
-
-.blog-section .heading {
-    font-family: var(--font-heading);
-    font-weight: 700;
-    font-size: 3.8rem;
-    line-height: 1.26;
-    text-align: center;
-    letter-spacing: -0.02em;
-    color: var(--black-color);
 }
 
 .blog-section .desc {
