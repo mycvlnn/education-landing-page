@@ -148,20 +148,21 @@ a {
     align-items: center;
 }
 
-.hero figure.image-block {
-    width: 570px;
+.hero .media-block {
+    width: 48%;
     position: relative;
 }
 
-.hero figure .image {
+.hero .media-block .image {
     width: 470px;
     height: 685px;
     border-radius: 20px;
     object-fit: cover;
     object-position: center;
+    display: block;
 }
 
-.hero figure .card {
+.hero .media-block .summary {
     position: absolute;
     width: 270px;
     right: 0;
@@ -172,26 +173,22 @@ a {
     padding: 24px;
 }
 
-.hero figure .card-item {
+.hero .summary .item + .item {
     margin-top: 14px;
 }
 
-.hero figure .card-item:first-child {
-    margin-top: 0;
-}
-
-.hero .card-item .info {
+.hero .summary .item .info {
     margin-left: 16px;
 }
 
-.hero .card-item .quantity {
+.hero .summary .item .quantity {
     font-weight: 400;
     font-size: 1.4rem;
     line-height: 1.86;
     color: var(--text-color);
 }
 
-.hero .card-item .name {
+.hero .summary .item .name {
     font-weight: 600;
     font-size: 1.8rem;
     line-height: 1.67;
@@ -234,6 +231,9 @@ a {
 
 .hero-info .watch-video-btn {
     padding: 16px 28px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
 }
 
 .hero-info .watch-video-btn .icon {
