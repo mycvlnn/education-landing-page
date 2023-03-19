@@ -62,34 +62,34 @@
         <link rel="stylesheet" href="./assets/css/styles.css" />
     </head>
     <body>
+        <!-- Header -->
+        <header class="header sticky">
+            <div class="container">
+                <nav class="navbar">
+                    <a href="#" class="logo" dot-end=".">Lesson</a>
+                    <ul class="list">
+                        <li class="item">
+                            <a href="#">Home</a>
+                        </li>
+                        <li class="item">
+                            <a href="#courses">Courses</a>
+                        </li>
+                        <li class="item">
+                            <a href="#feedback">Reviews</a>
+                        </li>
+                        <li class="item">
+                            <a href="#blog">Our Blog</a>
+                        </li>
+                    </ul>
+                    <div class="actions">
+                        <a href="#!" class="btn sign-up-btn">Sign Up</a>
+                    </div>
+                </nav>
+            </div>
+        </header>
+
         <!-- Main -->
         <main>
-            <!-- Header -->
-            <header class="header sticky">
-                <div class="container">
-                    <nav class="navbar">
-                        <a href="#!" class="logo" dot-end=".">Lesson</a>
-                        <ul class="list">
-                            <li class="item">
-                                <a href="#!">Home</a>
-                            </li>
-                            <li class="item">
-                                <a href="#!">Courses</a>
-                            </li>
-                            <li class="item">
-                                <a href="#!">Pricing</a>
-                            </li>
-                            <li class="item">
-                                <a href="#!">Reviews</a>
-                            </li>
-                        </ul>
-                        <div class="actions">
-                            <a href="#!" class="btn sign-up-btn">Sign Up</a>
-                        </div>
-                    </nav>
-                </div>
-            </header>
-
             <!-- Hero section -->
             <div class="hero">
                 <div class="container">
@@ -171,7 +171,7 @@
             </div>
 
             <!-- Popular section -->
-            <div class="popular-section">
+            <div id="courses" class="popular-section">
                 <div class="container">
                     <header class="row header-popular">
                         <div class="info">
@@ -410,7 +410,7 @@
             </div>
 
             <!-- Testimonial (Feed back) -->
-            <div class="testimonial">
+            <div id="feedback" class="testimonial">
                 <div class="container">
                     <div class="feedback-list">
                         <!-- Feedback-item 1 -->
@@ -530,7 +530,7 @@
             </div>
 
             <!-- Blog section -->
-            <div class="blog-section">
+            <div id="blog" class="blog-section">
                 <div class="container">
                     <h2 class="heading lv2">Our blog</h2>
                     <p class="desc">
@@ -625,111 +625,111 @@
                     </div>
                 </div>
             </div>
+        </main>
 
-            <!-- Footer -->
-            <footer class="footer">
-                <div class="container">
-                    <div class="row row-start">
-                        <div class="summary">
-                            <a href="#!" class="logo" dot-end=".">Lesson</a>
-                            <p class="slogan">
-                                Need to help for your dream Career? trust us. With Lesson, study
-                                becomes a lot easier with us.
-                            </p>
-                            <div class="socials">
-                                <a href="#!" class="social-link">
-                                    <img
-                                        src="./assets/img/twitter-icon.svg"
-                                        alt=""
-                                        class="social-icon"
-                                    />
-                                </a>
-                                <a href="#!" class="social-link">
-                                    <img
-                                        src="./assets/img/facebook-icon.svg"
-                                        alt=""
-                                        class="social-icon"
-                                    />
-                                </a>
-                                <a href="#!" class="social-link">
-                                    <img
-                                        src="./assets/img/linkedin-icon.svg"
-                                        alt=""
-                                        class="social-icon"
-                                    />
-                                </a>
-                                <a href="#!" class="social-link">
-                                    <img
-                                        src="./assets/img/instagram-icon.svg"
-                                        alt=""
-                                        class="social-icon"
-                                    />
-                                </a>
-                            </div>
-                        </div>
-                        <div class="more-info row">
-                            <div class="col">
-                                <h3 class="title">Company</h3>
-                                <ul class="list">
-                                    <li class="item">
-                                        <a href="#!" class="link">About Us</a>
-                                    </li>
-                                    <li class="item">
-                                        <a href="#!" class="link">Features</a>
-                                    </li>
-                                    <li class="item">
-                                        <a href="#!" class="link">Our Pricing</a>
-                                    </li>
-                                    <li class="item">
-                                        <a href="#!" class="link">Latest News</a>
-                                    </li>
-                                </ul>
-                            </div>
-
-                            <div class="col">
-                                <h3 class="title">Support</h3>
-                                <ul class="list">
-                                    <li class="item">
-                                        <a href="#!" class="link">FAQ’s</a>
-                                    </li>
-                                    <li class="item">
-                                        <a href="#!" class="link">Terms & Conditions</a>
-                                    </li>
-                                    <li class="item">
-                                        <a href="#!" class="link">Privacy Policy</a>
-                                    </li>
-                                    <li class="item">
-                                        <a href="#!" class="link">Contact Us</a>
-                                    </li>
-                                </ul>
-                            </div>
-
-                            <div class="col">
-                                <h3 class="title">Address</h3>
-                                <ul class="list">
-                                    <li class="item">
-                                        <a href="#!" class="link">
-                                            <span>Location:</span> 27 Division St, New York, NY
-                                            10002, USA
-                                        </a>
-                                    </li>
-                                    <li class="item">
-                                        <a href="mailto:email@gmail.com" class="link">
-                                            <span>Email:</span> email@gmail.com
-                                        </a>
-                                    </li>
-                                    <li class="item">
-                                        <a href="tel:+000 1234 567 890" class="link">
-                                            <span>Location:</span> + 000 1234 567 890
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="container">
+                <div class="row row-start">
+                    <div class="summary">
+                        <a href="#" class="logo" dot-end=".">Lesson</a>
+                        <p class="slogan">
+                            Need to help for your dream Career? trust us. With Lesson, study becomes
+                            a lot easier with us.
+                        </p>
+                        <div class="socials">
+                            <a href="#!" class="social-link">
+                                <img
+                                    src="./assets/img/twitter-icon.svg"
+                                    alt=""
+                                    class="social-icon"
+                                />
+                            </a>
+                            <a href="#!" class="social-link">
+                                <img
+                                    src="./assets/img/facebook-icon.svg"
+                                    alt=""
+                                    class="social-icon"
+                                />
+                            </a>
+                            <a href="#!" class="social-link">
+                                <img
+                                    src="./assets/img/linkedin-icon.svg"
+                                    alt=""
+                                    class="social-icon"
+                                />
+                            </a>
+                            <a href="#!" class="social-link">
+                                <img
+                                    src="./assets/img/instagram-icon.svg"
+                                    alt=""
+                                    class="social-icon"
+                                />
+                            </a>
                         </div>
                     </div>
-                    <div class="copyright">Copyright ©2023 webdesign.gdn All rights reserved</div>
+                    <div class="more-info row">
+                        <div class="col">
+                            <h3 class="title">Company</h3>
+                            <ul class="list">
+                                <li class="item">
+                                    <a href="#!" class="link">About Us</a>
+                                </li>
+                                <li class="item">
+                                    <a href="#!" class="link">Features</a>
+                                </li>
+                                <li class="item">
+                                    <a href="#!" class="link">Our Pricing</a>
+                                </li>
+                                <li class="item">
+                                    <a href="#!" class="link">Latest News</a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="col">
+                            <h3 class="title">Support</h3>
+                            <ul class="list">
+                                <li class="item">
+                                    <a href="#!" class="link">FAQ’s</a>
+                                </li>
+                                <li class="item">
+                                    <a href="#!" class="link">Terms & Conditions</a>
+                                </li>
+                                <li class="item">
+                                    <a href="#!" class="link">Privacy Policy</a>
+                                </li>
+                                <li class="item">
+                                    <a href="#!" class="link">Contact Us</a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="col">
+                            <h3 class="title">Address</h3>
+                            <ul class="list">
+                                <li class="item">
+                                    <a href="#!" class="link">
+                                        <span>Location:</span> 27 Division St, New York, NY 10002,
+                                        USA
+                                    </a>
+                                </li>
+                                <li class="item">
+                                    <a href="mailto:email@gmail.com" class="link">
+                                        <span>Email:</span> email@gmail.com
+                                    </a>
+                                </li>
+                                <li class="item">
+                                    <a href="tel:+000 1234 567 890" class="link">
+                                        <span>Location:</span> + 000 1234 567 890
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
-            </footer>
-        </main>
+                <div class="copyright">Copyright ©2023 webdesign.gdn All rights reserved</div>
+            </div>
+        </footer>
     </body>
 </html>

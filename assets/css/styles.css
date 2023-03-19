@@ -2,6 +2,11 @@
     box-sizing: border-box;
 }
 
+html,
+body {
+    scroll-behavior: smooth;
+}
+
 html {
     font-size: 62.5%;
 }
@@ -719,7 +724,11 @@ footer.footer {
 
 footer.footer .row {
     display: flex;
-    gap: 145px;
+}
+
+.footer .summary {
+    width: 35%;
+    padding-right: 10px;
 }
 
 .footer .row-start {
@@ -740,7 +749,7 @@ footer.footer .row {
 
 .footer .summary .slogan {
     margin-top: 18px;
-    width: 267px;
+    max-width: 267px;
     font-weight: 400;
     font-size: 1.4rem;
     line-height: 1.86;
@@ -755,27 +764,23 @@ footer.footer .row {
 }
 
 .footer .more-info {
-    gap: 130px;
+    flex: 1;
+}
+
+.footer .more-info .col {
+    flex: 1;
+    padding-right: 10px;
 }
 
 .footer .more-info .title {
+    display: inline-block;
     font-weight: 600;
     line-height: 1.75;
     color: #fff;
     padding-bottom: 14px;
     margin-bottom: 16px;
-    position: relative;
-}
-
-.footer .more-info .title::after {
-    content: "";
-    position: absolute;
-    display: inline-block;
-    height: 1px;
-    width: 130px;
-    background-color: #59554b;
-    bottom: 0;
-    left: 0;
+    padding-right: 65px;
+    border-bottom: 1px solid #59554b;
 }
 
 .footer .more-info .item .link {
