@@ -4,4 +4,4 @@
 
 ## 2. Kết quả
 
-https://cdn.worldvectorlogo.com/logos/figma-5.svg
+https://mycvlnn.github.io/education-landing-page/
