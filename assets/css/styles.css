@@ -441,31 +441,41 @@ a {
     background-color: var(--primary-color);
 }
 
-/* =============== Feedback =============== */
+/* =============== Testimonial =============== */
 
-.feedback {
+.testimonial {
     padding: 96px 0;
     background-color: var(--bg-secondary);
 }
+.testimonial .feedback-list {
+    display: flex;
+    overflow: hidden;
+}
 
-.feedback .row {
+.testimonial .feedback-item {
+    flex-shrink: 0;
+    width: 100%;
+}
+
+.testimonial .row {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
-.feedback .student {
-    min-width: 160px;
-    max-width: 250px;
+.testimonial .info {
+    padding-right: 10px;
 }
 
-.feedback .student .avatar {
+.testimonial .info .avatar {
     width: 72px;
     height: 72px;
     border-radius: 999px;
+    object-fit: cover;
+    object-position: center;
 }
 
-.feedback .student .name {
+.testimonial .info .name {
     margin-top: 18px;
     display: block;
     font-family: var(--font-heading);
@@ -475,7 +485,7 @@ a {
     color: #f7f7f7;
 }
 
-.feedback .student .class {
+.testimonial .info .class {
     margin-top: 4px;
     font-weight: 400;
     font-size: 1.4rem;
@@ -483,40 +493,36 @@ a {
     color: #bfbcb3;
 }
 
-.feedback .student .dots {
+.testimonial .info .dots {
     margin-top: 28px;
     justify-content: flex-start;
 }
 
-.feedback .student .dots .dot {
+.testimonial .info .dots .dot {
     width: 6px;
     height: 6px;
     border-radius: 999px;
     background: #634700;
 }
 
-.feedback .student .dots .dot + .dot {
+.testimonial .info .dots .dot + .dot {
     margin-left: 6px;
 }
 
-.feedback .student .dots .dot.active {
+.testimonial .info .dots .dot.active {
     background-color: var(--primary-color);
 }
 
-.feedback .message {
-    width: 740px;
-    position: relative;
+.testimonial .content {
+    width: 66%;
+}
+
+.testimonial .content blockquote {
     font-style: italic;
-    font-weight: 400;
     font-size: 2.6rem;
     line-height: 1.54;
     color: #ffffff;
-}
-
-.feedback .message .quotes {
-    position: absolute;
-    left: -30px;
-    top: -28px;
+    margin-left: 30px;
 }
 
 /* =============== CTA Section =============== */
